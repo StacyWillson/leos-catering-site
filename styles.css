@@ -169,6 +169,11 @@ h1 { margin-bottom: 1.4rem; font-size: clamp(3.2rem, 8vw, 7.7rem); letter-spacin
 .quote { max-width: 950px; margin: 0 auto; text-align: center; }
 .quote blockquote { margin: 0 0 1.5rem; font-family: var(--serif); font-size: clamp(2rem, 4vw, 4rem); line-height: 1.15; }
 .quote cite { color: var(--gold-light); font-style: normal; font-size: .76rem; letter-spacing: .16em; text-transform: uppercase; }
+.testimonials { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 5rem); }
+.testimonial { padding-top: 1.5rem; border-top: 1px solid rgba(189,137,37,.5); }
+.testimonial blockquote { margin: 0 0 1.2rem; font-family: var(--serif); font-size: clamp(1.35rem, 2.3vw, 2rem); line-height: 1.35; }
+.testimonial cite { color: var(--rust); font-style: normal; font-size: .74rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.section-dark .testimonial cite { color: var(--gold-light); }
 
 .page-hero { min-height: 72vh; }
 .page-hero .hero-content { margin-bottom: 5rem; }
@@ -186,6 +191,19 @@ h1 { margin-bottom: 1.4rem; font-size: clamp(3.2rem, 8vw, 7.7rem); letter-spacin
 .menu-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0; }
 .menu-columns h3 { margin-bottom: .5rem; color: var(--rust); font-size: 1.2rem; font-family: var(--sans); font-weight: 800; text-transform: uppercase; }
 .menu-columns ul { margin: 0; padding-left: 1.1rem; }
+.menu-list { margin: 1.5rem 0 2rem; }
+.menu-list dt { margin-top: 1rem; font-family: var(--serif); font-size: 1.2rem; }
+.menu-list dd { margin: .2rem 0 0; color: rgba(21,20,18,.75); }
+.menu-samples { display: grid; gap: 0; margin-top: 3rem; border-top: 1px solid var(--line); }
+.menu-sample { border-bottom: 1px solid var(--line); }
+.menu-sample summary { padding: 1.5rem 0; cursor: pointer; list-style: none; font-family: var(--serif); font-size: clamp(1.5rem, 3vw, 2.4rem); }
+.menu-sample summary::-webkit-details-marker { display: none; }
+.menu-sample summary::after { content: "+"; float: right; color: var(--rust); font-family: var(--sans); }
+.menu-sample[open] summary::after { content: "−"; }
+.menu-sample-content { max-width: 850px; padding: 0 0 2rem; }
+.menu-sample-content h4 { margin: 1.3rem 0 .3rem; color: var(--rust); font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; }
+.menu-sample-content p, .menu-sample-content ul { margin-top: .35rem; }
+.menu-sample-content .button { margin-top: 1rem; }
 .download-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.5rem, 4vw, 4rem); background: transparent; }
 .download-card { min-height: 0; padding: 1.5rem 0; border: 0; border-top: 1px solid rgba(224,189,99,.45); background: transparent; }
 .download-card h3 { margin: 0 0 1.2rem; font-size: 1.8rem; }
@@ -194,6 +212,10 @@ h1 { margin-bottom: 1.4rem; font-size: clamp(3.2rem, 8vw, 7.7rem); letter-spacin
 .gallery { display: grid; grid-template-columns: 1.2fr .8fr .8fr; grid-auto-rows: 310px; gap: .8rem; }
 .gallery img { height: 100%; object-fit: cover; }
 .gallery img:first-child { grid-row: span 2; }
+.occasion-list { display: grid; gap: 0; border-top: 1px solid var(--line); }
+.occasion { display: grid; grid-template-columns: .75fr 1fr; gap: 2rem; padding: 2.25rem 0; border-bottom: 1px solid var(--line); }
+.occasion h3 { margin: 0; font-size: clamp(1.7rem, 3vw, 2.7rem); }
+.occasion p { max-width: 680px; margin: 0; }
 
 .contact-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(2rem, 7vw, 7rem); }
 .contact-panel h2 { font-size: clamp(2.8rem, 5vw, 5.5rem); }
@@ -244,6 +266,7 @@ h1 { margin-bottom: 1.4rem; font-size: clamp(3.2rem, 8vw, 7.7rem); letter-spacin
   .menu-feature { grid-template-columns: 1fr; }
   .menu-feature:nth-child(even) img { order: 0; }
   .gallery { grid-template-columns: 1fr 1fr; }
+  .occasion { grid-template-columns: 1fr; gap: .6rem; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 
@@ -252,7 +275,7 @@ h1 { margin-bottom: 1.4rem; font-size: clamp(3.2rem, 8vw, 7.7rem); letter-spacin
   .brand img { width: 58px; height: 58px; }
   .hero { min-height: 88vh; }
   .hero-content { margin-left: 1.25rem; margin-right: 1.25rem; }
-  .cards, .service-grid, .download-grid, .facts, .menu-columns, .form { grid-template-columns: 1fr; }
+  .cards, .service-grid, .download-grid, .facts, .menu-columns, .form, .testimonials { grid-template-columns: 1fr; }
   .field-full { grid-column: auto; }
   .split-media img { min-height: 380px; }
   .service-tile { min-height: 420px; }

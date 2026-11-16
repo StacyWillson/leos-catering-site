@@ -51,7 +51,7 @@ if (footer) {
         </div>
       </div>
     </div>
-    <div class="footer-bottom"><span>© ${new Date().getFullYear()} Leo's Catering Service</span><span>Private dining, personalized.</span></div>`;
+    <div class="footer-bottom"><span>© ${new Date().getFullYear()} Leo's Catering Service</span><span>Website by Stacy Willson</span></div>`;
 }
 
 const inquiryForm = document.querySelector("#inquiry-form");
