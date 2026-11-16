@@ -9,10 +9,10 @@ A responsive, static website prepared for the same general workflow as Mar y Tie
 
 ## Local preview
 
-From this folder, run a static server and open the displayed local URL. For example:
+From this folder, start the development preview and open the displayed local URL:
 
 ```powershell
-npx serve .
+npm run dev
 ```
 
 ## Pages

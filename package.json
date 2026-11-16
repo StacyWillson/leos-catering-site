@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "dev": "python -m http.server 4175 --bind 127.0.0.1",
     "build": "node build.mjs",
     "preview": "python -m http.server 4175 -d dist"
   }
