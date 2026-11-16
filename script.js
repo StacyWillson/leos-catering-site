@@ -46,7 +46,7 @@ if (footer) {
         <p class="footer-title">Contact</p>
         <div class="footer-links">
           <a href="https://wa.me/50685672493" target="_blank" rel="noreferrer">WhatsApp +506 8567 2493</a>
-          <a href="mailto:castroleonidas94@gmail.com">castroleonidas94@gmail.com</a>
+          <a href="mailto:leoscateringservice@outlook.com">leoscateringservice@outlook.com</a>
           <span>Matapalo, Santa Cruz<br>Guanacaste, Costa Rica</span>
         </div>
       </div>
