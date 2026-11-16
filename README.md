@@ -3,7 +3,7 @@
 A responsive, static website prepared for the same general workflow as Mar y Tierra:
 
 1. Store the code in a GitHub repository.
-2. Connect the repository to Cloudflare Pages (or Cloudflare Workers static assets).
+2. Connect the repository to Cloudflare Workers with Static Assets.
 3. Point `leoscatering.com` to the Cloudflare project after preview approval.
 4. Add a Web3Forms access key in `config.js` or inject it at build time.
 
@@ -29,4 +29,11 @@ npm run dev
 - Create a separate Web3Forms form for Leo's Catering and add its access key.
 - Test the form from the Cloudflare preview domain.
 - Confirm both `leoscatering.com` and `www.leoscatering.com` are connected before replacing the old site.
+
+## Cloudflare build settings
+
+- Build command: `npm run build`
+- Deploy command: `npx wrangler deploy`
+- Root directory: `/`
+- Production branch: `main`
 

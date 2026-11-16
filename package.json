@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "python -m http.server 4175 --bind 127.0.0.1",
     "build": "node build.mjs",
-    "preview": "python -m http.server 4175 -d dist"
+    "preview": "python -m http.server 4175 -d dist",
+    "deploy": "npx wrangler deploy"
   }
 }
 
