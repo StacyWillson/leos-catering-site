@@ -217,6 +217,21 @@ h1 { margin-bottom: 1.4rem; font-size: clamp(3.2rem, 8vw, 7.7rem); letter-spacin
 .occasion h3 { margin: 0; font-size: clamp(1.7rem, 3vw, 2.7rem); }
 .occasion p { max-width: 680px; margin: 0; }
 
+.service-area-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(2rem, 7vw, 7rem); align-items: start; }
+.lead-small { margin-top: 0; font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.7rem); line-height: 1.2; }
+.location-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 0; padding: 0; border-top: 1px solid rgba(224,189,99,.45); list-style: none; }
+.location-list li { padding: 1rem 0; border-bottom: 1px solid rgba(224,189,99,.45); color: var(--gold-light); font-family: var(--serif); font-size: clamp(1.25rem, 2vw, 1.75rem); }
+.location-list li:nth-child(odd) { padding-right: 1rem; }
+.faq-list { border-top: 1px solid var(--line); }
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-item summary { padding: 1.5rem 3rem 1.5rem 0; cursor: pointer; list-style: none; font-family: var(--serif); font-size: clamp(1.35rem, 2.5vw, 2rem); position: relative; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: "+"; position: absolute; right: .25rem; color: var(--rust); font-family: var(--sans); }
+.faq-item[open] summary::after { content: "−"; }
+.faq-item > div { max-width: 900px; padding: 0 3rem 1.75rem 0; }
+.faq-item p { margin-top: 0; }
+.faq-item .button { margin-top: .5rem; }
+
 .contact-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(2rem, 7vw, 7rem); }
 .contact-panel h2 { font-size: clamp(2.8rem, 5vw, 5.5rem); }
 .contact-links { display: grid; gap: .6rem; margin: 2rem 0; }
@@ -261,7 +276,7 @@ h1 { margin-bottom: 1.4rem; font-size: clamp(3.2rem, 8vw, 7.7rem); letter-spacin
   }
   .nav-links.open { display: flex; }
   .nav-links a { font-size: 1rem; }
-  .section-head, .split, .contact-layout { grid-template-columns: 1fr; }
+  .section-head, .split, .contact-layout, .service-area-layout { grid-template-columns: 1fr; }
   .cards, .service-grid, .download-grid { grid-template-columns: 1fr 1fr; }
   .menu-feature { grid-template-columns: 1fr; }
   .menu-feature:nth-child(even) img { order: 0; }
@@ -284,5 +299,7 @@ h1 { margin-bottom: 1.4rem; font-size: clamp(3.2rem, 8vw, 7.7rem); letter-spacin
   .cta-band { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; }
+  .location-list { grid-template-columns: 1fr; }
+  .location-list li:nth-child(odd) { padding-right: 0; }
 }
 
